@@ -1,0 +1,6 @@
+[
+  { "id": 1, "type": "earthquake", "state": "Maharashtra", "district": "Pune", "message": "Minor tremors reported. Drop, Cover, Hold.", "severity": "moderate", "time": "2025-09-12T08:00:00Z" },
+  { "id": 2, "type": "flood", "state": "Bihar", "district": "Patna", "message": "River level high. Move to higher ground.", "severity": "high", "time": "2025-09-12T09:00:00Z" }
+]
+
+

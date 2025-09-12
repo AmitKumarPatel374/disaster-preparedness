@@ -1,0 +1,50 @@
+[
+    {
+        "id": "earthquake",
+        "title": "Earthquake Preparedness",
+        "description": "भूकंप आने पर क्या करें और क्या न करें।",
+        "content": [
+            "दरवाज़े और खिड़कियों से दूर रहें।",
+            "मजबूत मेज़ या डेस्क के नीचे छिपें।",
+            "लिफ्ट का इस्तेमाल न करें।"
+        ],
+        "quizzes": [
+            {
+                "title": "Earthquake Basics Quiz",
+                "file": "earthquake.json"
+            }
+        ]
+    },
+    {
+        "id": "flood",
+        "title": "Flood Safety",
+        "description": "बाढ़ के समय अपनी सुरक्षा कैसे करें।",
+        "content": [
+            "उच्च स्थान पर जाएं।",
+            "पानी से भरे रास्तों से बचें।",
+            "ज़रूरी सामान (medicine, torch) तैयार रखें।"
+        ],
+        "quizzes": [
+            {
+                "title": "Flood Safety Quiz",
+                "file": "flood.json"
+            }
+        ]
+    },
+    {
+        "id": "fire",
+        "title": "Fire Safety",
+        "description": "आग लगने पर सुरक्षा उपाय और बचाव के तरीके।",
+        "content": [
+            "धुएँ से बचने के लिए झुककर चलें।",
+            "नाक-मुँह को कपड़े से ढकें।",
+            "लिफ्ट का उपयोग न करें, सीढ़ियों से बाहर निकलें।"
+        ],
+        "quizzes": [
+            {
+                "title": "Fire Safety Quiz",
+                "file": "fire.json"
+            }
+        ]
+    }
+]

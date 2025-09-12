@@ -1,0 +1,20 @@
+{
+  "IN": {
+    "Maharashtra": {
+      "Pune": {
+        "police": "+91-100",
+        "ambulance": "+91-102",
+        "disaster": "+91-1078"
+      }
+    },
+    "Bihar": {
+      "Patna": {
+        "police": "+91-100",
+        "ambulance": "+91-102",
+        "disaster": "+91-1078"
+      }
+    }
+  }
+}
+
+

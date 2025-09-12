@@ -1,0 +1,55 @@
+[
+  {
+    "id": "earthquake",
+    "title": "Earthquake",
+    "overview": "An earthquake is the shaking of the surface of the Earth resulting from a sudden release of energy.",
+    "images": ["/assets/eq1.jpg"],
+    "videos": ["https://www.youtube.com/embed/dJpIU1rSOFY"],
+    "tips": [
+      "Drop, Cover, and Hold On.",
+      "Stay away from windows and heavy objects.",
+      "After shaking stops, evacuate carefully using stairs."
+    ],
+    "response": [
+      "Check for injuries and hazards (gas leaks, electric lines).",
+      "Use text messages to communicate.",
+      "Expect aftershocks and be ready to Drop, Cover, and Hold On again."
+    ]
+  },
+  {
+    "id": "flood",
+    "title": "Flood",
+    "overview": "Floods are high water levels that submerge land that's usually dry.",
+    "images": ["/assets/flood1.jpg"],
+    "videos": ["https://www.youtube.com/embed/FDaW7QJzi10"],
+    "tips": [
+      "Move to higher ground immediately.",
+      "Avoid walking or driving through flood waters.",
+      "Disconnect electrical appliances."
+    ],
+    "response": [
+      "Listen to local alerts and updates.",
+      "Boil or treat water before drinking.",
+      "Document damage for insurance and aid."
+    ]
+  },
+  {
+    "id": "fire",
+    "title": "Wildfire / Fire",
+    "overview": "Fires can spread quickly and produce dangerous smoke.",
+    "images": ["/assets/fire1.jpg"],
+    "videos": ["https://www.youtube.com/embed/9K0i1RZrO_s"],
+    "tips": [
+      "Stay low to avoid smoke; cover nose and mouth.",
+      "Use stairs, not elevators.",
+      "Have an evacuation plan and kit ready."
+    ],
+    "response": [
+      "Evacuate if instructed; keep doors closed.",
+      "Call emergency services from a safe location.",
+      "Treat minor burns; seek medical care for serious injuries."
+    ]
+  }
+]
+
+
