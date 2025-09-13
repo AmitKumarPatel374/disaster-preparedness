@@ -4,8 +4,50 @@ export async function loadAlerts() {
 }
 
 export async function loadContacts() {
-  const res = await fetch('/data/contacts.json')
-  return res.json()
+  try {
+    const res = await fetch('/data/contacts.json')
+    if (!res.ok) throw new Error('Failed to load contacts')
+    return await res.json()
+  } catch (error) {
+    console.error('Error loading contacts:', error)
+    // Return fallback contacts if file loading fails
+    return {
+      fallback: {
+        police: "100",
+        ambulance: "102", 
+        fire: "101",
+        disaster: "108",
+        women_helpline: "1091",
+        child_helpline: "1098",
+        national_emergency: "112"
+      }
+    }
+  }
+}
+
+export function getEmergencyContacts(contactsData, state, district) {
+  console.log('Getting emergency contacts for:', { state, district, contactsData })
+  
+  if (!contactsData || !state) {
+    console.log('No contacts data or state, using fallback')
+    return contactsData?.fallback || null
+  }
+
+  // Try to find specific district contacts first
+  if (district && contactsData.IN?.[state]?.[district]) {
+    console.log('Found district-specific contacts:', contactsData.IN[state][district])
+    return contactsData.IN[state][district]
+  }
+
+  // Fall back to state default
+  if (contactsData.IN?.[state]?.default) {
+    console.log('Using state default contacts:', contactsData.IN[state].default)
+    return contactsData.IN[state].default
+  }
+
+  // Final fallback to national emergency numbers
+  console.log('Using fallback contacts:', contactsData.fallback)
+  return contactsData.fallback || null
 }
 
 export function findRegionAlerts(alerts, state, district) {

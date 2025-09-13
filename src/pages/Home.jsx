@@ -29,21 +29,27 @@ const modules = [
 
 export default function Home() {
     return (
-        <div>
-            <h1 className="page-title">Disaster Preparedness Education</h1>
-            <p className="page-subtle" style={{marginBottom:16}}>Choose a module to start learning.</p>
-            <div className="grid grid-3">
-                {modules.map((m) => (
-                    <ModuleCard
-                        key={m.id}
-                        title={m.title}
-                        description={m.description}
-                        icon={m.icon}
-                        path={m.path}
-                    />
-                ))}
+        <div className="home-page">
+            <div className="hero-section">
+                <h1 className="page-title">Disaster Preparedness Education</h1>
+                <p className="page-subtle hero-subtitle">Choose a module to start learning about disaster safety and preparedness.</p>
             </div>
-            <div style={{marginTop:20}}>
+            
+            <div className="modules-section">
+                <div className="grid grid-3">
+                    {modules.map((m) => (
+                        <ModuleCard
+                            key={m.id}
+                            title={m.title}
+                            description={m.description}
+                            icon={m.icon}
+                            path={m.path}
+                        />
+                    ))}
+                </div>
+            </div>
+            
+            <div className="chatbot-section">
                 <Chatbot />
             </div>
         </div>

@@ -13,6 +13,17 @@ export default function ModulePage() {
             .then(data => {
                 const found = data.find(m => m.id === moduleId)
                 setModuleData(found)
+                
+                // Track module access
+                if (found) {
+                    const currentStats = JSON.parse(localStorage.getItem('student_stats') || '{"completedQuizzes":0,"completedSimulations":0,"awarenessModules":0}')
+                    const moduleKey = `module_${moduleId}`
+                    if (!currentStats[moduleKey]) {
+                        currentStats.awarenessModules += 1
+                        currentStats[moduleKey] = true
+                        localStorage.setItem('student_stats', JSON.stringify(currentStats))
+                    }
+                }
             })
             .catch(err => console.error("Error loading module data:", err))
     }, [moduleId])

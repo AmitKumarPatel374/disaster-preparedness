@@ -45,7 +45,16 @@ export default function FireSimulation() {
         this.scene.pause()
         const msg = win ? '✅ Safe! You exited the building.' : '❌ You inhaled too much smoke.'
         this.add.text(200, 260, msg, { color: win ? '#065f46' : '#991b1b', fontSize:'20px' })
-        try { await saveGameResult('fire', win ? 100 : 0, {}) } catch {}
+        try { 
+          await saveGameResult('fire', win ? 100 : 0, {})
+          
+          // Track simulation completion in student stats
+          if (win) {
+            const currentStats = JSON.parse(localStorage.getItem('student_stats') || '{"completedQuizzes":0,"completedSimulations":0,"awarenessModules":0}')
+            currentStats.completedSimulations += 1
+            localStorage.setItem('student_stats', JSON.stringify(currentStats))
+          }
+        } catch {}
       }
 
       update() {

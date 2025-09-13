@@ -12,6 +12,8 @@ import Header from "./components/Header"
 import Footer from "./components/Footer"
 import AlertBanner from "./components/AlertBanner"
 import SOSButton from "./components/SOSButton"
+import EmergencyContacts from "./components/EmergencyContacts"
+import ThemeToggle from "./components/ThemeToggle"
 import Awareness from "./pages/Awareness"
 import Simulations from "./pages/Simulations"
 import Auth from "./pages/Auth"
@@ -55,6 +57,8 @@ function App() {
       </main>
       <Footer />
       <SOSButton />
+      <EmergencyContacts />
+      <ThemeToggle />
     </Router>
   )
 }

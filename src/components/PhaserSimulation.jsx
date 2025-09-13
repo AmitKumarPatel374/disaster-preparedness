@@ -95,6 +95,21 @@ export default function PhaserSimulation() {
                 if (inSafe) {
                     this.status.setText("Status: ✅ Safe! आप मेज़ के नीचे सुरक्षित हैं।")
                     this.safeZone.setStrokeStyle(2, 0x16a34a)
+                    
+                    // Track simulation completion
+                    if (!this.completed) {
+                        this.completed = true
+                        const currentStats = JSON.parse(localStorage.getItem('student_stats') || '{"completedQuizzes":0,"completedSimulations":0,"awarenessModules":0}')
+                        currentStats.completedSimulations += 1
+                        localStorage.setItem('student_stats', JSON.stringify(currentStats))
+                        
+                        // Show completion message
+                        this.add.text(400, 100, "🎉 Simulation Completed!", { 
+                            fontSize: "24px", 
+                            color: "#16a34a",
+                            fontStyle: "bold"
+                        }).setOrigin(0.5)
+                    }
                 } else {
                     this.status.setText("Status: Move to the green safe zone under the table.")
                     this.safeZone.setStrokeStyle(2, 0x10b981)

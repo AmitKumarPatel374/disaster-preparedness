@@ -2,52 +2,146 @@
   {
     "id": "earthquake",
     "title": "Earthquake",
-    "overview": "An earthquake is the shaking of the surface of the Earth resulting from a sudden release of energy.",
-    "images": ["/assets/eq1.jpg"],
-    "videos": ["https://www.youtube.com/embed/dJpIU1rSOFY"],
+    "overview": "An earthquake is the shaking of the surface of the Earth resulting from a sudden release of energy in the Earth's lithosphere that creates seismic waves.",
+    "images": [
+      "https://images.unsplash.com/photo-1551524164-6cf2ac5313c4?w=500&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=300&fit=crop"
+    ],
+    "videos": [
+      "https://www.youtube.com/embed/dJpIU1rSOFY",
+      "https://www.youtube.com/embed/9K0i1RZrO_s"
+    ],
     "tips": [
-      "Drop, Cover, and Hold On.",
-      "Stay away from windows and heavy objects.",
-      "After shaking stops, evacuate carefully using stairs."
+      "Drop, Cover, and Hold On - this is the most important action during an earthquake",
+      "Stay away from windows, mirrors, and heavy objects that could fall",
+      "After shaking stops, evacuate carefully using stairs, never elevators",
+      "If you're outdoors, move to an open area away from buildings, trees, and power lines",
+      "If you're in a vehicle, pull over to a safe location and stay inside",
+      "Have an emergency kit ready with water, food, first aid supplies, and medications"
     ],
     "response": [
-      "Check for injuries and hazards (gas leaks, electric lines).",
-      "Use text messages to communicate.",
-      "Expect aftershocks and be ready to Drop, Cover, and Hold On again."
+      "Check for injuries and hazards like gas leaks, electric lines, and structural damage",
+      "Use text messages to communicate as phone lines may be overloaded",
+      "Expect aftershocks and be ready to Drop, Cover, and Hold On again",
+      "Turn off gas, water, and electricity if you suspect damage",
+      "Listen to local radio or TV for emergency information and instructions",
+      "Help neighbors who may need assistance, especially elderly or disabled individuals"
     ]
   },
   {
     "id": "flood",
     "title": "Flood",
-    "overview": "Floods are high water levels that submerge land that's usually dry.",
-    "images": ["/assets/flood1.jpg"],
-    "videos": ["https://www.youtube.com/embed/FDaW7QJzi10"],
+    "overview": "Floods are high water levels that submerge land that's usually dry. They can be caused by heavy rainfall, storm surges, or dam failures.",
+    "images": [
+      "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1551524164-6cf2ac5313c4?w=500&h=300&fit=crop"
+    ],
+    "videos": [
+      "https://www.youtube.com/embed/FDaW7QJzi10",
+      "https://www.youtube.com/embed/dJpIU1rSOFY"
+    ],
     "tips": [
-      "Move to higher ground immediately.",
-      "Avoid walking or driving through flood waters.",
-      "Disconnect electrical appliances."
+      "Move to higher ground immediately when flood warnings are issued",
+      "Avoid walking or driving through flood waters - just 6 inches can knock you down",
+      "Disconnect electrical appliances and turn off main power if flooding is imminent",
+      "Move valuable items to higher floors or elevated areas",
+      "Keep important documents in waterproof containers",
+      "Have an evacuation plan and emergency kit ready"
     ],
     "response": [
-      "Listen to local alerts and updates.",
-      "Boil or treat water before drinking.",
-      "Document damage for insurance and aid."
+      "Listen to local alerts and updates from weather services and emergency management",
+      "Boil or treat water before drinking as flood water may be contaminated",
+      "Document damage for insurance and aid purposes with photos and videos",
+      "Avoid contact with flood water as it may contain sewage, chemicals, or debris",
+      "Return home only when authorities say it's safe to do so",
+      "Be aware of potential health hazards like mold and contaminated water"
     ]
   },
   {
     "id": "fire",
     "title": "Wildfire / Fire",
-    "overview": "Fires can spread quickly and produce dangerous smoke.",
-    "images": ["/assets/fire1.jpg"],
-    "videos": ["https://www.youtube.com/embed/9K0i1RZrO_s"],
+    "overview": "Fires can spread quickly and produce dangerous smoke. Wildfires can be natural or human-caused and can devastate large areas.",
+    "images": [
+      "https://images.unsplash.com/photo-1551524164-6cf2ac5313c4?w=500&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=300&fit=crop"
+    ],
+    "videos": [
+      "https://www.youtube.com/embed/9K0i1RZrO_s",
+      "https://www.youtube.com/embed/FDaW7QJzi10"
+    ],
     "tips": [
-      "Stay low to avoid smoke; cover nose and mouth.",
-      "Use stairs, not elevators.",
-      "Have an evacuation plan and kit ready."
+      "Stay low to avoid smoke; cover nose and mouth with a wet cloth",
+      "Use stairs, not elevators, as elevators may stop working during fires",
+      "Have an evacuation plan and emergency kit ready with essential supplies",
+      "Keep flammable materials away from heat sources and open flames",
+      "Install and maintain smoke detectors on every level of your home",
+      "Create a defensible space around your property by clearing vegetation"
     ],
     "response": [
-      "Evacuate if instructed; keep doors closed.",
-      "Call emergency services from a safe location.",
-      "Treat minor burns; seek medical care for serious injuries."
+      "Evacuate immediately if instructed by authorities; keep doors closed behind you",
+      "Call emergency services from a safe location outside the building",
+      "Treat minor burns with cool water; seek medical care for serious injuries",
+      "Stay away from the area until authorities declare it safe to return",
+      "Use a fire extinguisher only if the fire is small and you know how to use it",
+      "If trapped, signal for help by waving a bright cloth or using a flashlight"
+    ]
+  },
+  {
+    "id": "cyclone",
+    "title": "Cyclone / Hurricane",
+    "overview": "Cyclones are powerful rotating storms with strong winds and heavy rain that can cause widespread destruction.",
+    "images": [
+      "https://images.unsplash.com/photo-1551524164-6cf2ac5313c4?w=500&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=300&fit=crop"
+    ],
+    "videos": [
+      "https://www.youtube.com/embed/dJpIU1rSOFY",
+      "https://www.youtube.com/embed/9K0i1RZrO_s"
+    ],
+    "tips": [
+      "Stay indoors and away from windows during the storm",
+      "Secure outdoor furniture and objects that could become projectiles",
+      "Have a battery-powered radio and extra batteries for updates",
+      "Fill bathtubs and containers with water for drinking and sanitation",
+      "Keep important documents in waterproof containers",
+      "Know your evacuation route and have a plan for pets"
+    ],
+    "response": [
+      "Listen to weather updates and follow evacuation orders immediately",
+      "Stay in the strongest part of your home, away from windows",
+      "Use flashlights instead of candles to avoid fire hazards",
+      "Avoid using electrical appliances during the storm",
+      "After the storm, avoid downed power lines and flooded areas",
+      "Check on neighbors and help those who may need assistance"
+    ]
+  },
+  {
+    "id": "tsunami",
+    "title": "Tsunami",
+    "overview": "Tsunamis are large ocean waves caused by underwater earthquakes, volcanic eruptions, or landslides.",
+    "images": [
+      "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1551524164-6cf2ac5313c4?w=500&h=300&fit=crop"
+    ],
+    "videos": [
+      "https://www.youtube.com/embed/FDaW7QJzi10",
+      "https://www.youtube.com/embed/dJpIU1rSOFY"
+    ],
+    "tips": [
+      "Move to higher ground immediately if you feel a strong earthquake near the coast",
+      "Never go to the beach to watch a tsunami - it's extremely dangerous",
+      "Listen to tsunami warnings and evacuation orders from authorities",
+      "Have an evacuation plan and know the quickest route to higher ground",
+      "Keep emergency supplies in your car and at home",
+      "Stay away from the coast until authorities say it's safe to return"
+    ],
+    "response": [
+      "Evacuate immediately when tsunami warnings are issued - don't wait",
+      "Move inland and to higher ground as quickly as possible",
+      "If you can't evacuate, go to the upper floors of a sturdy building",
+      "Stay away from the coast for several hours after the initial wave",
+      "Listen to local radio for updates and safety information",
+      "Help others evacuate if you can do so safely"
     ]
   }
 ]

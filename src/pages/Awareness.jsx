@@ -44,52 +44,73 @@ export default function Awareness() {
   }
 
   return (
-    <div>
-      <h1 className="page-title">Disaster Awareness</h1>
+    <div className="awareness-page">
+      <div className="hero-section">
+        <h1 className="page-title">Disaster Awareness</h1>
+        <p className="page-subtle">Learn about different types of disasters and how to stay safe.</p>
+      </div>
+
       {/* Controls */}
-      <div className="card" style={{display:'flex', gap:8, alignItems:'center'}}>
-        <input placeholder="Search disasters, tips or responses..." value={query} onChange={(e)=> setQuery(e.target.value)} style={{flex:1}} />
-        <button className="btn" onClick={resetLocal}>Reset to defaults</button>
+      <div className="search-controls">
+        <div className="search-card">
+          <input 
+            placeholder="Search disasters, tips or responses..." 
+            value={query} 
+            onChange={(e)=> setQuery(e.target.value)} 
+            className="search-input"
+          />
+          <button className="btn reset-btn" onClick={resetLocal}>Reset to defaults</button>
+        </div>
       </div>
 
       {/* Table of contents */}
-      <div className="card" style={{display:'flex', gap:12, flexWrap:'wrap'}}>
-        {filtered.map(d => (
-          <a key={d.id} href={`#${d.id}`} className="btn" style={{padding:'8px 12px', borderRadius:10}}>{d.title}</a>
-        ))}
+      <div className="toc-section">
+        <div className="toc-card">
+          <h3 className="toc-title">Quick Navigation</h3>
+          <div className="toc-links">
+            {filtered.map(d => (
+              <a key={d.id} href={`#${d.id}`} className="toc-link">{d.title}</a>
+            ))}
+          </div>
+        </div>
       </div>
 
-      <div className="grid">
+      <div className="disasters-grid">
         {filtered.map(d => (
-          <section key={d.id} className="card">
-            <h2 id={d.id} style={{marginTop:0, fontWeight:800}}>{d.title}</h2>
-            <p className="page-subtle">{d.overview}</p>
+          <section key={d.id} className="disaster-card" id={d.id}>
+            <div className="disaster-header">
+              <h2 className="disaster-title">{d.title}</h2>
+              <p className="disaster-overview">{d.overview}</p>
+            </div>
+            
             {d.images?.length ? (
-              <div style={{display:'flex',gap:8,flexWrap:'wrap',marginTop:8}}>
+              <div className="disaster-images">
                 {d.images.map((src, i) => (
-                  <img key={i} src={src} alt={d.title} style={{maxWidth:240, borderRadius:10, border:'1px solid var(--border)'}} />
+                  <img key={i} src={src} alt={d.title} className="disaster-image" />
                 ))}
               </div>
             ) : null}
+            
             {d.videos?.length ? (
-              <div style={{marginTop:12}}>
+              <div className="disaster-videos">
                 {d.videos.map((v, i) => (
-                  <div key={i} style={{position:'relative',paddingTop:'56.25%',marginBottom:8, borderRadius:10, overflow:'hidden'}}>
-                    <iframe src={v} title={`${d.title} video ${i+1}`} style={{position:'absolute',inset:0,width:'100%',height:'100%',border:0}} allowFullScreen></iframe>
+                  <div key={i} className="video-container">
+                    <iframe src={v} title={`${d.title} video ${i+1}`} className="disaster-video" allowFullScreen></iframe>
                   </div>
                 ))}
               </div>
             ) : null}
-            <div style={{display:'grid', gap:8, marginTop:8}}>
-              <div className="card" style={{margin:0}}>
-                <h3 style={{marginTop:0, fontWeight:700}}>Safety Tips</h3>
-                <ul style={{margin:0, paddingLeft:18}}>
+            
+            <div className="disaster-content">
+              <div className="content-card">
+                <h3 className="content-title">Safety Tips</h3>
+                <ul className="content-list">
                   {d.tips?.map((t, i) => (<li key={i}>{t}</li>))}
                 </ul>
               </div>
-              <div className="card" style={{margin:0}}>
-                <h3 style={{marginTop:0, fontWeight:700}}>Response Procedures</h3>
-                <ul style={{margin:0, paddingLeft:18}}>
+              <div className="content-card">
+                <h3 className="content-title">Response Procedures</h3>
+                <ul className="content-list">
                   {d.response?.map((t, i) => (<li key={i}>{t}</li>))}
                 </ul>
               </div>

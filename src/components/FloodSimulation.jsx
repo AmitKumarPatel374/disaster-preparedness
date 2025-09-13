@@ -48,7 +48,16 @@ export default function FloodSimulation() {
         this.scene.pause()
         const msg = win ? '✅ Safe! You reached high ground.' : '❌ You were caught by the flood.'
         this.add.text(200, 260, msg, { color: win ? '#065f46' : '#991b1b', fontSize:'20px' })
-        try { await saveGameResult('flood', win ? 100 : 0, { timeSec: Math.round(this.elapsed) }) } catch {}
+        try { 
+          await saveGameResult('flood', win ? 100 : 0, { timeSec: Math.round(this.elapsed) })
+          
+          // Track simulation completion in student stats
+          if (win) {
+            const currentStats = JSON.parse(localStorage.getItem('student_stats') || '{"completedQuizzes":0,"completedSimulations":0,"awarenessModules":0}')
+            currentStats.completedSimulations += 1
+            localStorage.setItem('student_stats', JSON.stringify(currentStats))
+          }
+        } catch {}
       }
 
       update(time, delta) {

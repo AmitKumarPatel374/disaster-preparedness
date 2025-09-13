@@ -1,19 +1,422 @@
 {
   "IN": {
-    "Maharashtra": {
-      "Pune": {
-        "police": "+91-100",
-        "ambulance": "+91-102",
-        "disaster": "+91-1078"
+    "Andhra Pradesh": {
+      "default": {
+        "police": "100",
+        "ambulance": "102",
+        "fire": "101",
+        "disaster": "108",
+        "women_helpline": "1091",
+        "child_helpline": "1098"
+      }
+    },
+    "Arunachal Pradesh": {
+      "default": {
+        "police": "100",
+        "ambulance": "102",
+        "fire": "101",
+        "disaster": "108",
+        "women_helpline": "1091",
+        "child_helpline": "1098"
+      }
+    },
+    "Assam": {
+      "default": {
+        "police": "100",
+        "ambulance": "102",
+        "fire": "101",
+        "disaster": "108",
+        "women_helpline": "1091",
+        "child_helpline": "1098"
       }
     },
     "Bihar": {
+      "default": {
+        "police": "100",
+        "ambulance": "102",
+        "fire": "101",
+        "disaster": "108",
+        "women_helpline": "1091",
+        "child_helpline": "1098"
+      },
       "Patna": {
-        "police": "+91-100",
-        "ambulance": "+91-102",
-        "disaster": "+91-1078"
+        "police": "100",
+        "ambulance": "102",
+        "fire": "101",
+        "disaster": "108",
+        "women_helpline": "1091",
+        "child_helpline": "1098"
+      }
+    },
+    "Chhattisgarh": {
+      "default": {
+        "police": "100",
+        "ambulance": "102",
+        "fire": "101",
+        "disaster": "108",
+        "women_helpline": "1091",
+        "child_helpline": "1098"
+      }
+    },
+    "Goa": {
+      "default": {
+        "police": "100",
+        "ambulance": "102",
+        "fire": "101",
+        "disaster": "108",
+        "women_helpline": "1091",
+        "child_helpline": "1098"
+      }
+    },
+    "Gujarat": {
+      "default": {
+        "police": "100",
+        "ambulance": "102",
+        "fire": "101",
+        "disaster": "108",
+        "women_helpline": "1091",
+        "child_helpline": "1098"
+      }
+    },
+    "Haryana": {
+      "default": {
+        "police": "100",
+        "ambulance": "102",
+        "fire": "101",
+        "disaster": "108",
+        "women_helpline": "1091",
+        "child_helpline": "1098"
+      }
+    },
+    "Himachal Pradesh": {
+      "default": {
+        "police": "100",
+        "ambulance": "102",
+        "fire": "101",
+        "disaster": "108",
+        "women_helpline": "1091",
+        "child_helpline": "1098"
+      }
+    },
+    "Jharkhand": {
+      "default": {
+        "police": "100",
+        "ambulance": "102",
+        "fire": "101",
+        "disaster": "108",
+        "women_helpline": "1091",
+        "child_helpline": "1098"
+      }
+    },
+    "Karnataka": {
+      "default": {
+        "police": "100",
+        "ambulance": "102",
+        "fire": "101",
+        "disaster": "108",
+        "women_helpline": "1091",
+        "child_helpline": "1098"
+      }
+    },
+    "Kerala": {
+      "default": {
+        "police": "100",
+        "ambulance": "102",
+        "fire": "101",
+        "disaster": "108",
+        "women_helpline": "1091",
+        "child_helpline": "1098"
+      }
+    },
+    "Madhya Pradesh": {
+      "default": {
+        "police": "100",
+        "ambulance": "102",
+        "fire": "101",
+        "disaster": "108",
+        "women_helpline": "1091",
+        "child_helpline": "1098"
+      },
+      "Bhopal": {
+        "police": "100",
+        "ambulance": "102",
+        "fire": "101",
+        "disaster": "108",
+        "women_helpline": "1091",
+        "child_helpline": "1098"
+      },
+      "Indore": {
+        "police": "100",
+        "ambulance": "102",
+        "fire": "101",
+        "disaster": "108",
+        "women_helpline": "1091",
+        "child_helpline": "1098"
+      },
+      "Chhatarpur": {
+        "police": "100",
+        "ambulance": "102",
+        "fire": "101",
+        "disaster": "108",
+        "women_helpline": "1091",
+        "child_helpline": "1098"
+      }
+    },
+    "Maharashtra": {
+      "default": {
+        "police": "100",
+        "ambulance": "102",
+        "fire": "101",
+        "disaster": "108",
+        "women_helpline": "1091",
+        "child_helpline": "1098"
+      },
+      "Mumbai": {
+        "police": "100",
+        "ambulance": "102",
+        "fire": "101",
+        "disaster": "108",
+        "women_helpline": "1091",
+        "child_helpline": "1098"
+      },
+      "Pune": {
+        "police": "100",
+        "ambulance": "102",
+        "fire": "101",
+        "disaster": "108",
+        "women_helpline": "1091",
+        "child_helpline": "1098"
+      }
+    },
+    "Manipur": {
+      "default": {
+        "police": "100",
+        "ambulance": "102",
+        "fire": "101",
+        "disaster": "108",
+        "women_helpline": "1091",
+        "child_helpline": "1098"
+      }
+    },
+    "Meghalaya": {
+      "default": {
+        "police": "100",
+        "ambulance": "102",
+        "fire": "101",
+        "disaster": "108",
+        "women_helpline": "1091",
+        "child_helpline": "1098"
+      }
+    },
+    "Mizoram": {
+      "default": {
+        "police": "100",
+        "ambulance": "102",
+        "fire": "101",
+        "disaster": "108",
+        "women_helpline": "1091",
+        "child_helpline": "1098"
+      }
+    },
+    "Nagaland": {
+      "default": {
+        "police": "100",
+        "ambulance": "102",
+        "fire": "101",
+        "disaster": "108",
+        "women_helpline": "1091",
+        "child_helpline": "1098"
+      }
+    },
+    "Odisha": {
+      "default": {
+        "police": "100",
+        "ambulance": "102",
+        "fire": "101",
+        "disaster": "108",
+        "women_helpline": "1091",
+        "child_helpline": "1098"
+      }
+    },
+    "Punjab": {
+      "default": {
+        "police": "100",
+        "ambulance": "102",
+        "fire": "101",
+        "disaster": "108",
+        "women_helpline": "1091",
+        "child_helpline": "1098"
+      }
+    },
+    "Rajasthan": {
+      "default": {
+        "police": "100",
+        "ambulance": "102",
+        "fire": "101",
+        "disaster": "108",
+        "women_helpline": "1091",
+        "child_helpline": "1098"
+      }
+    },
+    "Sikkim": {
+      "default": {
+        "police": "100",
+        "ambulance": "102",
+        "fire": "101",
+        "disaster": "108",
+        "women_helpline": "1091",
+        "child_helpline": "1098"
+      }
+    },
+    "Tamil Nadu": {
+      "default": {
+        "police": "100",
+        "ambulance": "102",
+        "fire": "101",
+        "disaster": "108",
+        "women_helpline": "1091",
+        "child_helpline": "1098"
+      }
+    },
+    "Telangana": {
+      "default": {
+        "police": "100",
+        "ambulance": "102",
+        "fire": "101",
+        "disaster": "108",
+        "women_helpline": "1091",
+        "child_helpline": "1098"
+      }
+    },
+    "Tripura": {
+      "default": {
+        "police": "100",
+        "ambulance": "102",
+        "fire": "101",
+        "disaster": "108",
+        "women_helpline": "1091",
+        "child_helpline": "1098"
+      }
+    },
+    "Uttar Pradesh": {
+      "default": {
+        "police": "100",
+        "ambulance": "102",
+        "fire": "101",
+        "disaster": "108",
+        "women_helpline": "1091",
+        "child_helpline": "1098"
+      }
+    },
+    "Uttarakhand": {
+      "default": {
+        "police": "100",
+        "ambulance": "102",
+        "fire": "101",
+        "disaster": "108",
+        "women_helpline": "1091",
+        "child_helpline": "1098"
+      }
+    },
+    "West Bengal": {
+      "default": {
+        "police": "100",
+        "ambulance": "102",
+        "fire": "101",
+        "disaster": "108",
+        "women_helpline": "1091",
+        "child_helpline": "1098"
+      }
+    },
+    "Delhi": {
+      "default": {
+        "police": "100",
+        "ambulance": "102",
+        "fire": "101",
+        "disaster": "108",
+        "women_helpline": "1091",
+        "child_helpline": "1098"
+      }
+    },
+    "Jammu and Kashmir": {
+      "default": {
+        "police": "100",
+        "ambulance": "102",
+        "fire": "101",
+        "disaster": "108",
+        "women_helpline": "1091",
+        "child_helpline": "1098"
+      }
+    },
+    "Ladakh": {
+      "default": {
+        "police": "100",
+        "ambulance": "102",
+        "fire": "101",
+        "disaster": "108",
+        "women_helpline": "1091",
+        "child_helpline": "1098"
+      }
+    },
+    "Puducherry": {
+      "default": {
+        "police": "100",
+        "ambulance": "102",
+        "fire": "101",
+        "disaster": "108",
+        "women_helpline": "1091",
+        "child_helpline": "1098"
+      }
+    },
+    "Chandigarh": {
+      "default": {
+        "police": "100",
+        "ambulance": "102",
+        "fire": "101",
+        "disaster": "108",
+        "women_helpline": "1091",
+        "child_helpline": "1098"
+      }
+    },
+    "Dadra and Nagar Haveli and Daman and Diu": {
+      "default": {
+        "police": "100",
+        "ambulance": "102",
+        "fire": "101",
+        "disaster": "108",
+        "women_helpline": "1091",
+        "child_helpline": "1098"
+      }
+    },
+    "Lakshadweep": {
+      "default": {
+        "police": "100",
+        "ambulance": "102",
+        "fire": "101",
+        "disaster": "108",
+        "women_helpline": "1091",
+        "child_helpline": "1098"
+      }
+    },
+    "Andaman and Nicobar Islands": {
+      "default": {
+        "police": "100",
+        "ambulance": "102",
+        "fire": "101",
+        "disaster": "108",
+        "women_helpline": "1091",
+        "child_helpline": "1098"
       }
     }
+  },
+  "fallback": {
+    "police": "100",
+    "ambulance": "102",
+    "fire": "101",
+    "disaster": "108",
+    "women_helpline": "1091",
+    "child_helpline": "1098",
+    "national_emergency": "112"
   }
 }
 

@@ -13,10 +13,12 @@ export default function Quiz({ quizId, quizFile }) {
   const [score, setScore] = useState(0)
   const [finished, setFinished] = useState(false)
   const [saving, setSaving] = useState(false) // prevent double saves
+  const [error, setError] = useState(null)
 
   useEffect(() => {
     (async () => {
       try {
+        setError(null)
         // Prefer admin-provided LocalStorage override if present
         let data
         try {
@@ -31,6 +33,7 @@ export default function Quiz({ quizId, quizFile }) {
         setQuiz(data)
       } catch (err) {
         console.error('Error loading quiz', err)
+        setError(err.message)
       }
     })()
   }, [effectiveQuizFile])
@@ -61,6 +64,11 @@ export default function Quiz({ quizId, quizFile }) {
           date: new Date().toISOString()
         }
         await saveQuizResult(record)
+        
+        // Update student stats
+        const currentStats = JSON.parse(localStorage.getItem('student_stats') || '{"completedQuizzes":0,"completedSimulations":0,"awarenessModules":0}')
+        currentStats.completedQuizzes += 1
+        localStorage.setItem('student_stats', JSON.stringify(currentStats))
       } catch (err) {
         console.error('Error saving quiz result', err)
       } finally {
@@ -69,14 +77,31 @@ export default function Quiz({ quizId, quizFile }) {
     }
   }
 
-  if (!quiz) return <div className="card">Loading quiz...</div>
+  if (error) return (
+    <div className="card">
+      <div className="error-state">
+        <h2>Error Loading Quiz</h2>
+        <p className="error-message">{error}</p>
+        <button onClick={() => window.location.reload()}>Retry</button>
+      </div>
+    </div>
+  )
+
+  if (!quiz) return (
+    <div className="card">
+      <div className="loading-state">
+        <div className="loading-spinner"></div>
+        <p>Loading quiz...</p>
+      </div>
+    </div>
+  )
 
   if (finished) {
     return (
-      <div className="card" style={{background:'#ecfdf5', border:'1px solid #a7f3d0'}}>
-        <h2 style={{fontWeight:700, fontSize:18}}>Quiz Complete!</h2>
-        <p>आपका स्कोर: {score} / {quiz.questions.length}</p>
-        <p>बहुत अच्छा! आपने Disaster Preparedness में एक कदम और आगे बढ़ाया।</p>
+      <div className="card" style={{background:'var(--success-light)', border:'1px solid var(--success)'}}>
+        <h2 style={{fontWeight:700, fontSize:18, color:'var(--text)'}}>Quiz Complete!</h2>
+        <p style={{color:'var(--text)'}}>आपका स्कोर: {score} / {quiz.questions.length}</p>
+        <p style={{color:'var(--text)'}}>बहुत अच्छा! आपने Disaster Preparedness में एक कदम और आगे बढ़ाया।</p>
       </div>
     )
   }
@@ -85,15 +110,15 @@ export default function Quiz({ quizId, quizFile }) {
 
   return (
     <div className="card">
-      <h2 style={{fontWeight:700, marginBottom:8}}>{quiz.title}</h2>
-      <p style={{marginBottom:12}}>Q{current + 1}. {q.q}</p>
+      <h2 style={{fontWeight:700, marginBottom:8, color:'var(--text)'}}>{quiz.title}</h2>
+      <p style={{marginBottom:12, color:'var(--text)'}}>Q{current + 1}. {q.q}</p>
       <div className="options" style={{display:'flex',flexDirection:'column',gap:8}}>
         {q.options.map((opt, idx) => (
           <button
             key={idx}
             onClick={() => handleAnswer(idx)}
             className=""
-            style={{display:'block', width:'100%', padding:'10px 12px', border:'1px solid var(--border)', borderRadius:8}}
+            style={{display:'block', width:'100%', padding:'10px 12px', border:'1px solid var(--border)', borderRadius:8, background:'var(--surface)', color:'var(--text)'}}
             disabled={saving}
           >
             {opt}
